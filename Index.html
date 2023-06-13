@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event RSVP</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Event RSVP</h1>
+    <button id="rsvpButton">Coming</button>
+    <p id="responseMessage"></p>
+
+    <script>
+        $(document).ready(function() {
+            let count = 0;
+
+            $('#rsvpButton').click(function() {
+                count++;
+                $('#responseMessage').text(count + ' people are coming.');
+            });
+        });
+    </script>
+</body>
+</html>
